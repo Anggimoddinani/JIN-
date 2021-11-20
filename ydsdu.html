@@ -1,0 +1,191 @@
+<!doctype html> 
+<title>Element Table Quiz</title>
+
+<style>
+    html { 
+    background-color: black;
+    text-align: center;
+    color: white;
+    }
+    #display {
+        background-color: white;
+        border: 2px solid gray;
+        margin-left: 500px;
+        width: 500px; 
+        border: 2px solid white;
+        color: red;
+        font-size: 30px;
+        text-align: center;
+        padding: 25px;
+    }
+    #element { 
+        margin-top: 50px;
+        margin-left: 500px;
+        width: 500px; 
+        height: 500px;
+    }
+    
+    button { 
+    width: 110px;
+    height: 100px;
+    margin: 2px 2px;
+    align-content: center;
+    border-radius:100px;
+    
+    }
+    #music { 
+    height: 100px;
+    }
+    #musicOne {
+    background-color: black;
+    float: right;
+    }
+    a { 
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    }
+</style>
+
+<a href = "quiz.html">기출문제 풀러가기</a>
+<div id = "music">
+
+<audio id="musicOne" controls autoplay>
+    <source src ="/Users/jeewon/Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/The Pink Panther Theme Song (Original Version).mp3">
+    </audio>
+
+    </div>
+<div id ="display">
+    <h1>원소 기호 암기하기</h1>
+
+</div>
+
+<div id ="element">
+    <button id ="one">1</button>;
+    <button id ="two">2</button>;
+    <button id ="three">3</button>;
+    <button id ="four">4</button>;
+    <br>
+    <button id ="five">5</button>;
+    <button id ="six">6</button>;
+    <button id ="seven">7</button>;
+    <button id ="eight">8</button>;
+    <br>
+    <button id ="nine">9</button>;
+    <button id ="ten">10</button>;
+    <button id ="eleven">11</button>;
+    <button id ="twelve">12</button>;
+    <br>
+    <button id ="thirteen">13</button>;
+    <button id ="fourteen">14</button>;
+    <button id ="fifteen">15</button>;
+    <button id ="sixteen">16</button>;
+     <br>
+    <button id ="seventeen">17</button>;
+    <button id ="eighteen">18</button>;
+    <button id ="nineteen">19</button>;
+    <button id ="twenty">20</button>;
+    <button id ="reset">Reset</button>;
+</div>
+
+<script> 
+
+    function displayA() { 
+    display.innerHTML = "H(수소)";
+}
+function displayB() { 
+    display.innerHTML ="He(헬륨)";
+}
+function displayC() { 
+    display.innerHTML ="Li(리튬)";
+}   
+    function displayD() { 
+    display.innerHTML ="Be(베릴륨)";
+}
+    
+  function displayE() { 
+    display.innerHTML ="B(붕소)";
+}
+       
+ function displayF() { 
+    display.innerHTML ="C(탄소)";
+}
+ function displayG() { 
+    display.innerHTML ="N(질소)";
+}
+    
+  function displayH() { 
+    display.innerHTML ="O(산소)";
+}
+       
+ function displayI() { 
+    display.innerHTML ="F(플루오린)";
+}
+ function displayJ() { 
+    display.innerHTML ="NE(네온)";
+}
+ function displayK() { 
+    display.innerHTML ="NA(나트륨)";
+}
+    
+  function displayL() { 
+    display.innerHTML ="Mg(마그네슘)";
+}
+       
+ function displayM() { 
+    display.innerHTML ="Al(알류미늄)";
+}
+function displayN() { 
+    display.innerHTML ="Si(규소)";
+}
+    
+  function displayO() { 
+    display.innerHTML ="P(인)";
+}
+       
+ function displayP() { 
+    display.innerHTML ="S(황)";
+}
+ function displayQ() { 
+    display.innerHTML ="Cl(염소)";
+}
+ function displayR() { 
+    display.innerHTML ="Ar(아르곤)";
+}
+    
+  function displayS() { 
+    display.innerHTML ="K(칼륨)";
+}
+       
+ function displayT() { 
+    display.innerHTML ="Ca(칼슘)";
+}
+        
+    one.onclick = displayA;
+    two.onclick = displayB;
+    three.onclick = displayC;
+    four.onclick = displayD;
+    five.onclick = displayE;
+    six.onclick = displayF;
+    seven.onclick = displayG;
+    eight.onclick = displayH;
+    nine.onclick = displayI;
+    ten.onclick = displayJ;
+    eleven.onclick = displayK;
+    twelve.onclick = displayL;
+    thirteen.onclick = displayM;
+    fourteen.onclick = displayN;
+     fifteen.onclick = displayO;
+    sixteen.onclick = displayP;
+    seventeen.onclick = displayQ;
+    eighteen.onclick = displayR;
+    nineteen.onclick = displayS;
+    twenty.onclick = displayT;
+    
+    
+function resetG() { 
+    display.innerHTML = "";
+}
+    reset.onclick = resetG;
+</script>
+

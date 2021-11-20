@@ -1,0 +1,79 @@
+<!doctype html>
+<title>lomocosodorotofogo</title>
+<style>
+    html{
+        background-image: url("https://mblogthumb-phinf.pstatic.net/MjAyMDA4MjhfMjcx/MDAxNTk4NjIyNzAzNjI2.d5PTfD6BsFr8NhKx3wmNWw529GIAWo15Mrnkwrgxb3og.6yfQs2bi-H0j2okN3rVDih5sPUeeIkkQqY4vBQ9IFDAg.JPEG.chance_pol/1598622702606.jpg?type=w800");
+        text-align:center;
+        color:forestgreen;
+    }
+    #disp{
+        margin-top: 40px;
+        background-color: black;
+        color: white;
+    }
+    #hohomama{
+        width:300px;
+        height:30px;
+    }
+    button{
+        width:100px;
+        height:30px;
+        background-color:dodgerblue;
+        color:white;
+    }
+    a:hover {
+        background-color: white;
+    }
+    input { 
+    margin-bottom: 10px;
+    }
+    
+</style>
+<h1>메로나 바이러스 때문에 군침이 안돌면</h1>
+<h2>이 프로그램으로 <br>당신의 군침이 메마르지 않고 넘쳐흐르게 하라</h2>
+<h3>호로롤<br>호로로로로로롤롤</h3>
+월요일<input id= hohomama1><br>
+화요일<input id= hohomama2><br>
+수요일<input id= hohomama3><br>
+목요일<input id= hohomama4><br>
+금요일<input id= hohomama5><br>
+토요일<input id= hohomama6><br>
+<button id=lko>결과보기</button>
+<button id= ckso>처음으로</button>
+<div id= "disp">
+
+</div>
+
+<script>
+    
+function checkData() {
+    var human = (Number(hohomama1.value) + Number(hohomama2.value) + Number(hohomama3.value) + Number(hohomama4.value) + Number(hohomama5.value) + Number(hohomama6.value))/6;
+    if (human >= 100 && human <= 200) {
+    disp.innerHTML = human+"명" +"<br>"+"1단계다 군침이 넘쳐흐르노"    
+    }
+    else if (human > 200 && human <= 300) {
+    disp.innerHTML = human+"명" +"<br>"+"2단계다 군침이 싹도노"    
+    }
+    else if (human > 300 && human <= 400) {
+    disp.innerHTML = human+"명" +"<br>"+"3단계다 군침이 싹 안도노"    
+    }
+    else if (human >= 500) {
+    disp.innerHTML = human+"명" +"<br>"+"4단계다 군침이 싹 메마르노"    
+    }
+    
+}
+    
+lko.onclick = checkData;
+    
+    function resetData(){
+    hohomama1.value = "";
+    hohomama2.value = "";
+    hohomama3.value = "";
+    hohomama4.value = "";
+    hohomama5.value = "";
+    hohomama6.value = "";
+    disp.innerHTML= "";
+    }
+    ckso.onclick = resetData
+
+</script>

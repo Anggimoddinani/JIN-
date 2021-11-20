@@ -1,0 +1,55 @@
+<!doctype html>
+<title>lomocosodorotofogo</title>
+<style>
+    html{
+        background-image: url("http://image.dongascience.com/Photo/2020/10/43e8a59a80ad1b9a41954b1538d5e0ea.jpg");
+        text-align:center;
+        color:cyan;
+    }
+    #display{
+        margin-top: 40px;
+        background-color: black;
+        color: white;
+    }
+    #lomocosodorotofogo{
+        width:300px;
+        height:30px;
+    }       
+    button{
+        width:100px;
+        height:30px;
+        background-color:dodgerblue;
+        color:white;
+    }
+    a:hover {
+        background-color: white;
+    }
+</style>
+<h1>당신은 코로나인가 메로나인가</h1>
+<h2>온도가 높으면 메로나는 녹고<br>당신은 코로나로 변한다</h2>
+<h3>온도 높으면<br>선별진료소가서 코따갑게 혼나고 오세요</h3>
+<input id= lomocosodorotofogo>
+<button id=lomo>결과보기</button>
+<button id= coso>처음으로</button>
+<div id= "display">
+
+</div>
+
+<script>
+
+    function checkData() {
+    if(lomocosodorotofogo.value <= 37.5) {
+        display.innerHTML = "정상입니다" 
+    }    
+    else if(lomocosodorotofogo.value >= 37.5){
+        display.innerHTML = "얼른 선별 진료소가서 코 후비고 검사받으세요.<p><a href ='https://www.seocho.go.kr/site/seocho/gis/Gis_List.do?type1=corona'>선별 진료소 찾기</a>"
+    }
+}
+lomo.onclick = checkData;
+    
+    function resetData(){
+    display.innerHTML= "";
+    }
+    coso.onclick = resetData
+
+</script>

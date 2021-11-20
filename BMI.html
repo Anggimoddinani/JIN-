@@ -1,0 +1,63 @@
+<!doctype html>
+<title>BMI Calculator</title>
+
+<style>
+body {
+  font-family: sans-serif;
+}
+#display {
+margin-top: 50px;
+width: 400px;
+height: 400px;
+text-align: center;
+
+    }
+    
+</style>
+
+<h1>BMI Calculator</h1>
+
+<p>Enter your weight and height to calculate your BMI.
+
+<p>Weight in kilograms: <input id="weightInput" type="number" >
+<p>Height in meters: <input id="heightInput" type="number">
+<p>Your BMI: <input id="bmiInput" type="number">
+
+
+<p>"당신의 건강 상태는 ...두근두근두근두근 
+
+<div id = "display">
+
+</div>
+
+<script>
+
+function BananaMonkeyIcecream() {
+var H = heightInput.value;
+var W = weightInput.value;
+var BMI = W/(H*H);
+bmiInput.value = BMI.toFixed(1);
+    
+    if (BMI < 20) {
+       display.style.backgroundImage = "url('https://www.vhv.rs/dpng/d/470-4707903_henry-stickmin-wiki-henry-stickmin-hd-png-download.png')";
+        display.style.backgroundSize = "20px";
+    } else if (20 < BMI && BMI < 24) {
+       display.style.backgroundImage = "url('https://w7.pngwing.com/pngs/282/403/png-transparent-stick-figure-free-content-stickman-s-angle-text-logo.png')";
+         display.style.backgroundSize = "20px";
+    } else if (BMI > 24 )  {
+       display.style.backgroundImage = "url('https://cdn.pixabay.com/photo/2012/04/05/01/14/stickman-25576_1280.png')";
+        display.style.backgroundSize = "20px";
+    } 
+    
+}
+
+
+heightInput.oninput = BananaMonkeyIcecream;
+
+
+</script>
+    
+    
+    
+    
+    

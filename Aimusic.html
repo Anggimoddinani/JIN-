@@ -1,0 +1,81 @@
+<!doctype html> 
+<title>Ai Music Player</title>
+<style>
+    html {
+        background-color: black;
+        border: 4px solid green;
+        color: aqua;
+        text-align: center;
+    } 
+    select {
+        background-color: gold;
+        width: 100px;
+    }
+</style>    
+
+<h1>Ai MP3 Player by Jinu</h1>
+
+How do you feel today? 
+<p><select id='music'>
+<option></option>
+<option>Great</option>
+<option>Good</option>
+<option>So..So</option>
+<option>Bad</option>
+</select>
+
+<button onclick= "playAudio()">play</button>
+<button onclick= "stopAudio()">stop</button>
+    
+<audio id='BTS'>
+    <source src = "/Users/jeewon/Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/BTS - IDOL.mp3" type= "audio/mp3">
+    </audio>
+
+<audio id='EXO'>
+    <source src = "/Users/jeewon/Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/EXO - TEMPO.mp3" type="audio/mp3">
+    </audio>
+    
+<audio id='EXO1'>
+    <source src = "/Users/jeewon/Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/EXO - Love Shot.mp3" type="audio/mp3">
+    </audio>
+
+<audio id='BTS1'>
+    <source src = "/Users/jeewon/Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/BTS - DNA.mp3" type="audio/mp3">
+    </audio>
+        
+    
+    
+<script> 
+var x = document.getElementById("BTS")
+var y = document.getElementById("EXO")
+var z = document.getElementById("EXO1")
+var a = document.getElementById("BTS1")
+function playAudio() {
+
+    if(music.value =='Great'){
+    x.play()    
+    }
+    if(music.value =='Good'){
+    y.play()    
+    }
+    if(music.value =='So..So'){
+    z.play()    
+    }
+    if(music.value =='Bad'){
+    a.play()    
+    }
+}    
+function stopAudio() {
+    var x = document.getElementById("BTS")
+    var y = document.getElementById("EXO")
+    x.pause()   
+    y.pause()
+    z.pause()
+    a.pause()
+
+document.body.innerHTML = "좋은 하루가 되길!"
+}
+    
+
+</script>
+    
